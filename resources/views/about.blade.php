@@ -2,7 +2,7 @@
 @section('content')
 <!-- Number Counter -->
 <section class="counter-bg" style="">
-    <div class="sectionP40 blue-bg">
+    <div class="sectionP40 blue-bg gradient50">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -11,7 +11,7 @@
                             <div class="heading-text">
                                 <span class="gold-gradient-color">What We Believe</span>
                             </div>
-                            <p class="light2 oL" style="font-size: 16px;">  Our core values are centered around “Innovatus & Bellis”. Relax, that’s Latin for “Innovation & Strategy”.</p>
+                            <p class="light2 oL" style="font-size: 16px; color:white">  Our core values are centered around “Innovatus & Bellis”. Relax, that’s Latin for “Innovation & Strategy”.</p>
                             <button class="btn btn-gradient outline-button mtb20 hidden-sm hidden-xs"  data-aos="zoom-in-up" data-aos-duration="800"><div  style="background: #091D48;transition: all 0.3s">Chris Omoijiade</div></button>
                         </div>
                     </div>
