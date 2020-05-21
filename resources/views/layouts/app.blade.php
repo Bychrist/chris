@@ -36,7 +36,6 @@
 </style>
 </head>
 <body>
-<div class="se-pre-con"></div>
 
 <!-- NAVIGATION -->
 <nav class="navbar navbar-default">
