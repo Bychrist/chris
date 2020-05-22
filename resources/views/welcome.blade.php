@@ -135,13 +135,12 @@
                 </div>
                 <div class="col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
                     <div class="video-embed pull-right" data-aos="fade-left" data-aos-duration="1000">
-                        <div class="thumb">
-                             <span><i class="gold-gradient-color fa fa-youtube-play"></i></span>
-                        </div>
-                        <iframe width="533" height="300" src="https://www.youtube.com/embed/2LeOH9AGJQM?rel=0" frameborder="0" allowfullscreen></iframe>
-                        <!--<iframe src="https://player.vimeo.com/video/202406936?title=0&amp;byline=0&amp;portrait=0&amp;color=FDA10E&amp;autoplay=0" width="100%" height="300" autoplay="0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></iframe>-->
+                      
+                         <video id="video" width="100%" height="300" controls >
+                            <source src="{{asset('assets/images/chris_video.mp4')}}" type="video/mp4">
+                        </video>
                     </div>
-                    <div class="quote-div gold-gradient-bg pull-right" data-aos="fade-up" data-aos-duration="1000">
+                    <div id="vm" class="quote-div gold-gradient-bg pull-right" data-aos="fade-up" data-aos-duration="1000">
                         <p class="white oR text-justify">Setting healthy boundaries comes naturally for some people. And for others, it can be a struggle.But one thing is true: Establishing boundaries is not just important—it’s imperative, for a productive life and career.</p>
                     </div>
                 </div>
@@ -243,5 +242,10 @@
 </section>
 <!-- What Can We Offer -->
 
+
+{{-- the clients --}}
+
+@include('partials.client')
+{{-- end the client --}}
 
 @endsection

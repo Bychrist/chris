@@ -72,12 +72,6 @@ Hi I’m Chris Omoijiade fondly called the CEO and I will like to welcome you to
                     <div class="col-md-6 col-sm-12 col-xs-12 pull-right">
                         <div class="features">
                            <p class="text-justify">
-                            
-                            Hi I’m Chris Omoijiade fondly called the CEO and I will like to welcome you to the Chris Omoijiade Company where the art of excellence is a lifestyle
-                                                    
-                           </p>
-
-                           <p class="text-justify">
                                 I am a Public Speaker, Business and Life mentor, innovative consultant, entrepreneur and Lawyer with a strong passion for personal development and business growth. I have also spearheaded the launch of a number of business ventures, presently sitting on board as Partner and Director in various sectors such as Law, Property and Investment, Foreign Exchange Dealing, Education, Marketing and Communications, Trading and the travel and Hospitality Industry.
                            
                            </p>
@@ -92,7 +86,7 @@ Hi I’m Chris Omoijiade fondly called the CEO and I will like to welcome you to
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <div class="acordian-body res-txt-center" style="overflow-y:scroll">
+                                        <div class="acordian-body res-txt-center" style="overflow-y:scroll;padding-right:20px;">
                                             <span class="white rL">
                                               <p class="white text-justify">
                                               Christopher Ehinomen Omoijiade studied at the University of Lagos International School, Proceeding to read Law at the University of Lagos after his O Levels, where he graduated with a LLB Hons Degree and thereafter went to the Nigerian Law School and was subsequently called to the Nigerian Bar and made a Solicitor and Barrister of the Supreme Court of Nigeria.
@@ -131,6 +125,9 @@ Hi I’m Chris Omoijiade fondly called the CEO and I will like to welcome you to
 <!-- Our Best Features -->
 
 
+{{-- the client partials --}}
+@include('partials.client')
+{{-- end the client partials --}}
 
 
 

@@ -355,6 +355,16 @@
 <script type="text/javascript" src="{{asset('assets/js/bootstrap.js')}}"></script>
 
 <script>
+    $(document).ready(function () {
+        $("#video").click(function (e) { 
+          
+          $('#vm').toggle("slow");    
+            
+        });
+    });
+</script>
+
+<script>
 var myIndex = 0;
 carousel();
 
