@@ -55,14 +55,14 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
          
             <ul id="navigation" class="nav navbar-nav navbar-right">
-                <li><a class="{{ Request::is('/')? "active" : "" }}" href="{{url('/')}}">Home</a></li>
-                <li><a  class="{{ Request::is('/about')? "active" : "" }}" href="{{url('/about')}}">About</a></li>
-                <li><a  class="{{ Request::is('/event')? "active" : "" }}" href="{{url('/event')}}">Event</a></li>
-                <li><a  class="{{ Request::is('/gallery')? "active" : "" }}" href="{{url('/gallery')}}">Gallery</a></li>
-                <li><a  class="{{ Request::is('/resources')? "active" : "" }}" href="{{url('/resources')}}">Resources</a></li>
-                <li><a  class="{{ Request::is('/blog')? "active" : "" }}" href="{{url('/blog')}}">Blog</a></li>
-                <li><a  class="{{ Request::is('/session')? "active" : "" }}" href="{{url('/session')}}">Schedule A Session</a></li>
-                <li><a  class="{{ Request::is('/contact')? "active" : "" }}" href="{{url('/contact')}}">Contact</a></li>
+                <li class="{{ Request()->is('/')? "active" : "" }} "><a  href="{{url('/')}}">Home</a></li>
+                <li class="{{ Request()->is('about')? "active" : "" }} " ><a   href="{{url('/about')}}">About</a></li>
+                <li class="{{ Request()->is('event')? "active" : "" }} "><a   href="{{url('/event')}}">Event</a></li>
+                <li class="{{ Request()->is('gallery')? "active" : "" }} "><a   href="{{url('/gallery')}}">Gallery</a></li>
+                <li class="{{ Request()->is('resources')? "active" : "" }} "><a   href="{{url('/resources')}}">Resources</a></li>
+                <li class="{{ Request()->is('blog')? "active" : "" }} "><a   href="{{url('/blog')}}">Blog</a></li>
+                <li class="{{ Request()->is('session')? "active" : "" }} "><a   href="{{url('/session')}}">Schedule A Session</a></li>
+                <li><a  class="" href="#contact-section">Contact</a></li>
             </ul>
         
         </div>

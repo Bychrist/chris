@@ -1427,3 +1427,10 @@ span .blue-gradient-color{
 	40% {transform: translateY(-30px);}
 	60% {transform: translateY(-15px);}
 }
+
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    background:transparent;
+    color:#FF6C0D;
+}
