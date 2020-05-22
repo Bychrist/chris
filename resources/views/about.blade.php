@@ -9,10 +9,11 @@
                     <div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
                         <div class="responsive" data-aos="fade-right" data-aos-duration="1000" style="padding-top:150px">
                             <div class="heading-text">
-                                <span class="gold-gradient-color">What We Believe</span>
+                                <span class="gold-gradient-color">Business Consultancy</span>
                             </div>
-                            <p class="light2 oL" style="font-size: 16px; color:white">  Our core values are centered around “Innovatus & Bellis”. Relax, that’s Latin for “Innovation & Strategy”.</p>
-                            <button class="btn btn-gradient outline-button mtb20 hidden-sm hidden-xs"  data-aos="zoom-in-up" data-aos-duration="800"><div  style="background: #091D48;transition: all 0.3s">Chris Omoijiade</div></button>
+                            <p class="light2 oL" style="font-size: 16px; color:white">  Chris and his team help businesses strip down to the bare essentials and rebuild them to be lean, productive, effective and most importantly
+                            profitable</p>
+                           
                         </div>
                     </div>
                     <div id="counter" class="col-md-5 col-sm-12 col-xs-12 pull-right resPad0">
@@ -66,7 +67,7 @@ Hi I’m Chris Omoijiade fondly called the CEO and I will like to welcome you to
                 <div class="col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 p0 sectionP60">
                     <div class="col-md-5 col-sm-12 col-xs-12">
                         <div class="img" data-aos="fade-right" data-aos-duration="1000">
-                            <img class="img-responsive centered" src='assets/images/mobile.png'/>
+                            <img class="img-responsive centered rotate_im" src='{{asset('assets/images/mobile.png')}}'/>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 col-xs-12 pull-right">
@@ -123,6 +124,182 @@ Hi I’m Chris Omoijiade fondly called the CEO and I will like to welcome you to
     </div>
 </section>
 <!-- Our Best Features -->
+
+
+
+<!-- What Can We Offer -->
+<section id="offers-section" class="hiw-bg">
+    <div class="sectionP60 grey-bg-o">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                        <div class="heading-text">
+                            <span class="gold-gradient-color">Some Of The Ways We <br> Can Work Together.</span>
+                        </div>
+                        <p class="light oR" style="font-size: 16px;">If you are this individual or business, let’s start a conversation about endless possibilities we can achieve together.</p>
+                    </div>
+                    </div>
+                    <div class="col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 p0 sectionP40">
+                      
+                        <div class="col-md-12 col-sm-12 col-xs-12 sectionP20 pull-right">
+                            <div class="acordian gradient-accordian" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 pull-right">
+                                        <div class="acordian-desc res-txt-center">
+                                              <i class="fa fa-plus-square"></i><span>Speaking </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="acordian-body white" style="color:white;overflow-Y:scroll" >
+                                             <ul class="ul-style aboutlist" style="color:#fff !important"  >
+                                      
+                                          
+                                            Chris is constantly requested to speak at institutions, universities,
+                                            companies, and schools, government bodies almost every week, delivering
+                                            keynote addresses and speeches where he helps audiences:<br>
+                                       
+                                        
+                                        <li  data-aos="fade-left" data-aos-duration="1000">
+                                            <i class="fa fa-arrow-right"></i>
+                                           Get Vulnerable
+                                  
+                                        </li>
+                                        <li class="" data-aos="fade-left" data-aos-duration="1000">
+                                          <i class="fa fa-arrow-right"></i>
+                                           Lay down mental baggage and open up
+                                     
+                                        </li>
+
+                                        <li class="" data-aos="fade-left" data-aos-duration="1000">
+                                            <i class="fa fa-arrow-right"></i>
+                                            Facilitate adoption
+                                    
+                                        </li>
+                                        <li class="" data-aos="fade-left" data-aos-duration="1000">
+                                         <i class="fa fa-arrow-right"></i>
+                                            Show what management style isn’t working, and adopt one that works
+                               
+                                        </li>
+
+                                        <li class="" data-aos="fade-left" data-aos-duration="1000">
+                                            <i class="fa fa-arrow-right"></i>
+                                            Leave with valuable tools, ideas and working strategies to make a
+                                                difference.
+                                      
+                                        </li>
+
+                                        <li class="" data-aos="fade-left" data-aos-duration="1000">
+                                            <i class="fa fa-arrow-right"></i>
+                                                Increase Belonging
+                                   
+                                        </li>
+                                        <li class="" data-aos="fade-left" data-aos-duration="1000" >
+                                        <i class="fa fa-arrow-right"></i>
+                                                Create a mutual sense of self and identity to bond together.
+                                         
+                                        </li>
+                                
+                                  </ul>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                             <div class="acordian gradient-accordian" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 pull-right">
+                                        <div class="acordian-desc res-txt-center">
+                                              <i class="fa fa-recycle"></i><span class="rM">Workshop  & Training Facilitation (Online & In-Person)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="acordian-body " style="color:white;overflow-Y:scroll">
+
+                                          <ul class="ul-style aboutlist" style="color:#fff !important"  >
+                                                           Chris helps teams dig into each other deeply, creating stronger bonds
+                                                            and better business outcomes. They walk away able to: <br>
+
+                                                       <li><i class="fa fa-arrow-right"></i>      Understand Emotional Intelligence</li>
+
+                                                           <li><i class="fa fa-arrow-right"></i> The knowledge of EQ and it’s impact on individuals & Businesses</li>
+
+                                                            <li><i class="fa fa-arrow-right"></i>Create Resonance</li>
+
+                                                            <li><i class="fa fa-arrow-right"></i>Develop ideas and products that pull on heartstrings.</li>
+
+                                                          <li><i class="fa fa-arrow-right"></i>  Increase Performance</li>
+
+                                                          <li><i class="fa fa-arrow-right"></i>  Teams that feel safe with each other last longer and outperform
+                                                            competitors.</li>
+
+                                                          <li><i class="fa fa-arrow-right"></i>  Build Trust</li>
+
+                                                           <li><i class="fa fa-arrow-right"></i> Explore the barriers impeding trust and overcome them.</li>
+
+                                                            <li><i class="fa fa-arrow-right"></i> Experience Growth</li>
+
+                                                           <li><i class="fa fa-arrow-right"></i>  Retain clients longer, understanding their growth trajectory and meeting
+                                                            them there.</li>
+                                             </ul>
+                                           </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                              <div class="acordian gradient-accordian" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 pull-right">
+                                        <div class="acordian-desc res-txt-center">
+                                              <i class="fa fa-print"></i><span class="rM">Coaching</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="acordian-body " style="color:white;overflow-Y:scroll">
+
+                                          <ul class="ul-style aboutlist" style="color:#fff !important"  >
+                                                         Chris guides thought-leaders, change-makers and executives on how to
+                                                        share more of themselves through their work. Working confidentially,
+                                                        they: <br>
+
+                                                       <li><i class="fa fa-arrow-right"></i>     Get Clear</li>
+
+                                                           <li><i class="fa fa-arrow-right"></i> Get clear on their story and why they are the way they are</li>
+
+                                                            <li><i class="fa fa-arrow-right"></i>Find Hope</li>
+
+                                                            <li><i class="fa fa-arrow-right"></i> Gain awareness that they aren’t alone in challenges, and can overcome
+such.</li>
+
+                                                          <li><i class="fa fa-arrow-right"></i>  Go Deep</li>
+
+                                                          <li><i class="fa fa-arrow-right"></i>  Go deep into the areas that are almost never ventured into before</li>
+
+                                                          <li><i class="fa fa-arrow-right"></i>  Increase Drive</li>
+
+                                                           <li><i class="fa fa-arrow-right"></i>Increase motivation to lead their teams to do better</li>
+
+                                                            <li><i class="fa fa-arrow-right"></i> Experience Growth</li>
+
+                                                           <li><i class="fa fa-arrow-right"></i>  Retain clients longer, understanding their growth trajectory and meeting
+                                                            them there.</li>
+                                             </ul>
+                                           </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- What Can We Offer -->
+
+
+
+
 
 
 {{-- the client partials --}}

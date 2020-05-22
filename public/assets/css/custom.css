@@ -1434,3 +1434,29 @@ span .blue-gradient-color{
     background:transparent;
     color:#FF6C0D;
 }
+
+.modal-body >  div.cardbox{
+    padding:20px !important;
+
+}
+
+
+.modal-header >  h3.modal-title{
+   color:#e7c900;
+   
+
+}
+
+.rotate_im:hover{
+    transform:scaleX(-1);
+}
+
+
+ul.aboutlist li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }

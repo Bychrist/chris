@@ -97,16 +97,31 @@
                             <span class="gold-gradient-color">WHO WE ARE?</span>
                         </div>
                         <p class="light oR" data-aos="fade-up" data-aos-duration="1000">
-                          The Chris Omoijiade Company formerly known as Attrium Consultants is a Leadership, Management, innovative consultancy boutique firm that is rededicated to effective operation, administration and implementation of educational programs and tools aimed at enhancing more productive techniques to individuals, corporate entities and the public sector.
+                         You are welcome to the Chris Omoijiade Company, and I am a believer that
+                        life offers little or no coincidences. You’re here because you require
+                        a professional with the requisite skills to make an immediate and
+                        meaningful contribution to your life and business. Let me tell you how
+                        my team and I with a combined experience of decades can help you achieve
+                        your dream; this is because we go the extra mile.
                         </p>
                         <p>
-                            We achieve this by developing in-house practical approaches and solutions to solving life and business problems, we also operate under licence from some of the world’s leading authorities in various fields of knowledge dissemination to ensure growth and profitability.
+                            Our core competencies include learning & development content production,
+                            teaching, public speaking, and consulting. We work best with individuals
+                            and professionals who are tired of the status quo and are ready to take
+                            immediate action; those who are ready to shake things up and take an
+                            unconventional route to fulfill their goals.
                         </p>
-
-                        <a href="{{url('/about')}}">
-                        <button class="btn btn-gradient outline-button mtb20" data-toggle="modal" data-target="#pop-about" data-aos="zoom-in-up" data-aos-duration="800"><div style="background: #f1f1f1;transition: all 0.3s"><span>Read More About Us</span></div>
+                        <p>
+                            If you are this individual or business, let’s start a conversation about endless possibilities we can achieve together.
+                        </p>
+               
+                        <a href="{{url('about')}}" class="">
+                  
+                    
+                        <button class="btn btn-gradient outline-button mtb20" data-toggle="modal" data-target="#pop-about" data-aos="zoom-in-up" data-aos-duration="800"><div style="background: #f1f1f1;transition: all 0.3s"><span>Read More</span></div>
                         </button>
-                        </a>
+                              </a>
+                       
                     </div>
                 </div>
             </div>
@@ -191,7 +206,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="acordian active gradient-accordian" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="acordian  gradient-accordian" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <div class="col-md-12 col-sm-12 col-xs-12 pull-right">
                                         <div class="acordian-desc res-txt-center" style="color:#e7c900 !important" >
