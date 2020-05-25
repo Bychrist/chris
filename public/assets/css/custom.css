@@ -1460,3 +1460,15 @@ ul.aboutlist li::before {
     width: 1em;
     margin-left: -1em;
   }
+  
+  input:valid{
+      color:#fff;
+  }
+
+  input[type="submit"]:hover{
+      color:#000
+  }
+
+  .heading-text span, footer .cont-us p{
+      font-style: normal;
+  }

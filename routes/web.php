@@ -21,4 +21,9 @@ Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about', 'HomeController@about');
+Route::get('/session', 'HomeController@session');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

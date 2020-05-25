@@ -1,8 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
+    {{-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+
+
     <title>The Chris Omoijiade Company</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,6 +27,7 @@
     <link rel="shortcut icon" href="{{asset('assets/images/favicon.html')}}">
 
     <!--All css  are here-->
+      @yield('css')
 
     <!--Bootstrap css here-->
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.css')}}">
@@ -17,11 +35,12 @@
     <!--Font-Awsome css here-->
     <link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
 
+
     <!--Owl-carousel css here-->
     <link rel="stylesheet" href="{{asset('assets/plugins/owl/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{asset('assets/plugins/owl/owl.theme.css')}}">
     <link rel="stylesheet" href="{{asset('assets/plugins/owl/owl.transitions.css')}}">
-
+  
     <!--Custon css here-->
     <link rel="stylesheet" href="{{asset('assets/css/custom.css')}}">
 
@@ -31,218 +50,67 @@
     <!--Responsive css here-->
     <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <style>
 .mySlides {display:none;}
 </style>
 </head>
 <body>
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    {{ config('app.name', 'Laravel') }}
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<!-- NAVIGATION -->
-<nav class="navbar navbar-default">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header logoo">
-            <button id="tog-btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{url('/')}}"><img class="img-responsive"  src="{{asset('assets/images/logo.png')}}"></a>
-        </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-         
-            <ul id="navigation" class="nav navbar-nav navbar-right">
-                <li class="{{ Request()->is('/')? "active" : "" }} "><a  href="{{url('/')}}">Home</a></li>
-                <li class="{{ Request()->is('about')? "active" : "" }} " ><a   href="{{url('/about')}}">About</a></li>
-                <li class="{{ Request()->is('event')? "active" : "" }} "><a   href="{{url('/event')}}">Event</a></li>
-                <li class="{{ Request()->is('gallery')? "active" : "" }} "><a   href="{{url('/gallery')}}">Gallery</a></li>
-                <li class="{{ Request()->is('resources')? "active" : "" }} "><a   href="{{url('/resources')}}">Resources</a></li>
-                <li class="{{ Request()->is('blog')? "active" : "" }} "><a   href="{{url('/blog')}}">Blog</a></li>
-                <li class="{{ Request()->is('session')? "active" : "" }} "><a   href="{{url('/session')}}">Schedule A Session</a></li>
-                <li><a  class="" href="#contact-section">Contact</a></li>
-            </ul>
-        
-        </div>
+                    </ul>
 
-    </div>
-</nav>
-<!-- NAVIGATION -->
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
 
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
 
-
-
-
-@yield('content')
-
-
-
-
-<!-- Footer Section -->
-<footer id="contact-section" class="sectionP60 dark-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="col-md-7 col-sm-7 col-xs-12 pull-right resCont">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="heading-text">
-                            <span class="gold-gradient-color">Get in touch.</span>
-                        </div>
-                    </div>
-                    <form action="#">
-                        <div class="col-md-12 col-sm-12 col-xs-12 p0">
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="input-box">
-                                    <input placeholder="Full Name" type="text" required>
-                                    <span style="position: absolute"><i class="fa fa-user"></i></span>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="input-box">
-                                    <input placeholder="Email Address" type="text" required>
-                                    <span style="position: absolute"><i class="fa fa-envelope-o"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 p0">
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="input-box">
-                                    <input placeholder="Mobile or Telephone" type="text" required>
-                                    <span style="position: absolute"><i class="fa fa-phone"></i></span>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="input-box">
-                                    <input placeholder="Subject" type="text" required>
-                                    <span style="position: absolute"><i class="fa fa-puzzle-piece"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 p0">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="input-box">
-                                    <textarea placeholder="Type your message here..." name="" id="" cols="30" rows="5"></textarea>
-                                    <span style="position: absolute"><i class="fa fa-comments"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-gradient outline-button pull-right mtb20"><div style="background: #0C1222;transition: all 0.3s">Send <tag class="hidden-xs">Message</tag></div></button>
-                    </form>
-                </div>
-                <div class="col-md-4 col-sm-5 col-xs-12 border-right resCompany">
-                    <div class="company-desc logoo">
-                        <a href="#home-section"><img class="img-responsive" src="{{asset('assets/images/logo.png')}}" /></a>
-                      
-                    </div>
-                    
-                    <div class="cont-us">
-                        <p class="gold rL">Contact Us</p>
-                     
-                        <div><a class="light2 g" href="javascript:;"><span class="oR">Mobile :234 908-546-0000</span></a></div>
-                        <div><a class="light2 g" href="javascript:;"><span class="oR">Email : askchris@chrisomoijiade.com</span></a></div>
-                    </div>
-
-                        <div class="cont-us">
-                        <p class="gold rL">Social Media</p>
-                        <ul class="list-inline">
-                        <li class="list-inline-item"><a href="" style="color:#ffffff;font-weight:bolder"> <i class="fa fa-facebook"></i></a>  </li>
-                        <li class="list-inline-item"><a href="" style="color:#ffffff;font-weight:bolder"><i class="fa fa-youtube"></i> </a></li>
-                        <li class="list-inline-item"><a href="" style="color:#ffffff;font-weight:bolder"><i class="fa fa-twitter"></i> </a></li>
-                        <li class="list-inline-item"><a href="" style="color:#ffffff;font-weight:bolder"><i class="fa fa-instagram"></i> </a></li>
-                         <li class="list-inline-item"><a href="" style="color:#ffffff;font-weight:bolder"><i class="fa fa-linkedin"></i> </a></li>
-                        </ul>
-                        
-                    </div>
+                            </li>
+                        @endguest
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
+
+        <main class="py-4">
+            @yield('content')
+        </main>
     </div>
-</footer>
-<!-- Footer Section -->
-
-<!-- Copyright Section -->
-<section class="sectionP20" style="background: #0b101d;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="col-md-12">
-                    <p class="light oR m0" style="opacity: .65">&copy; Copyright 2017, all rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Copyright Section -->
-
-<!-- Scroll Back Top Button -->
-<button onclick="topFunction()" id="myBtn" class="btn btn-gradient"><i class="visible-xs fa fa-arrow-up"></i><tag class="hidden-xs">Back To Top</tag></button>
-<!-- Scroll Back Top Button -->
-
-
-
-
-
-<!-- All Javascripts -->
-
-<!-- Jquery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Bootstrap -->
-<script type="text/javascript" src="{{asset('assets/js/bootstrap.js')}}"></script>
-
-<script>
-    $(document).ready(function () {
-        $("#video").click(function (e) { 
-          
-          $('#vm').toggle("slow");    
-            
-        });
-    });
-</script>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
-
-<!-- Nice Scroll -->
-<script type="text/javascript" src="{{asset('assets/plugins/niceScroll/niceScroll.min.js')}}"></script>
-
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiJjq5DIg_K9fv6RE72OY__p9jz0YTMI"></script>
-<script type="text/javascript" src="{{asset('assets/plugins/map/map.js')}}"></script>
-
-<!-- Video Background -->
-<script type="text/javascript" src="{{asset('assets/plugins/videoBg/jquery.vide.js')}}"></script>
-
-<!-- Owl Carousel -->
-<script type="text/javascript" src="{{asset('assets/plugins/owl/owl.carousel.js')}}"></script>
-
-<!-- Number Counter -->
-<script type="text/javascript" src="{{asset('assets/plugins/numScroll/numscroller-1.0.js')}}"></script>
-
-<!-- Scroll Animations aos-master js -->
-<script src="{{asset('assets/plugins/aos-master/aos.js')}}"></script>
-
-<!-- Common -->
-<script type="text/javascript" src="{{asset('assets/js/common.js')}}"></script>
-
-<!-- All Javascripts -->
 </body>
-
-
 </html>

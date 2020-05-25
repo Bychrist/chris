@@ -1,14 +1,37 @@
-@extends('layouts.app')
+@extends('layouts.master')
+
+
+
+
+
+
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+<!-- Number Counter -->
+<section class="counter-bg" style="">
+    <div class="sectionP40 blue-bg gradient50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12" style="height:50px;">
+                      
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <div class='row' style="margin-bottom:100px;margin-top:200px;">
+        <div class="col-md-4 col-sm-4">
+        
+        </div>
+        <div class='col-sm-4 mx-auto'>
+                <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
@@ -65,9 +88,8 @@
                             </div>
                         </div>
                     </form>
-                </div>
-            </div>
+
         </div>
     </div>
-</div>
+
 @endsection

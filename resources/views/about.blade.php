@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 @section('content')
 <!-- Number Counter -->
 <section class="counter-bg" style="">
